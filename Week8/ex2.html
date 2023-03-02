@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Web Form</title>
+  <style>
+    fieldset {
+      width: 320px;
+      border: 2px ridge red;
+      padding: 10px;
+    }
+
+    legend {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-weight: bold;
+      ;
+    }
+
+    label {
+      float: left;
+      width: 100px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+
+    }
+
+    textarea {
+      resize: none;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Contact Us:</h1>
+  <form>
+    <fieldset>
+      <legend>Customer Information</legend>
+
+      <label for="fname">First Name:</label>
+      <input type="text" name="fname" id="fname" tabindex="3"><br><br>
+      <label for="lname">Last Name:</label>
+      <input type="text" name="lname" id="lname" tabindex="2"><br><br>
+      <label for="email">Email:</label>
+      <!-- tabindex = "-1" ignored during tabbing -->
+      <input type="email" name="email" id="email" tabindex="-1"><br><br>
+    </fieldset>
+    <br><br>
+    <label for="comments">Comments:(Press Alt+T)</label>
+    <!-- access key attribute on form controls make them keyboard friendly -->
+    <!-- used to create a hot key that your visitors can press to move the cursor immediately to a form control or hyperlink -->
+    <textarea name="comments" id="comments" rows="4" cols="50" accesskey="T"></textarea><br><br>
+    <input type="submit">
+    <input type="reset">
+  </form>
+
+</body>
+
+</html>

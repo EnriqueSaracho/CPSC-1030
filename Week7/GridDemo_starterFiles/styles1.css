@@ -1,0 +1,36 @@
+#wrapper {
+  display: grid;
+  grid-template:
+    "header header" auto
+    "nav main" auto
+    "footer footer" auto/
+    1fr 5fr;
+  grid-gap: 1em;
+}
+
+header {
+  grid-area: header;
+  background-color: blue;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  padding: 1em;
+}
+
+nav {
+  grid-area: nav;
+  background-color: bisque;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+main {
+  grid-area: main;
+  background-color: green;
+}
+
+footer {
+  grid-area: footer;
+  font-size: 0.7em;
+  background-color: indianred;
+  padding: 1em;
+}
