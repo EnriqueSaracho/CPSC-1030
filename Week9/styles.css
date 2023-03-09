@@ -23,6 +23,7 @@ label {
 }
 
 input {
+  padding: 0.5em;
   box-sizing: border-box;
   display: inline-block;
   width: 250px;
@@ -33,6 +34,7 @@ select {
   display: inline-block;
   width: 250px;
   height: 30px;
+  padding: 0.5em;
 }
 
 #radio-div {
@@ -53,7 +55,9 @@ select {
 
 textarea {
   margin: 1em 0 0 0.2em;
-  width: 247px;
+  width: 240px;
+  padding: 0.5em;
+  resize: none;
 }
 
 #hidden {
@@ -90,6 +94,6 @@ button {
 
   textarea {
     margin: 0;
-    width: 100%;
+    width: 95.5%;
   }
 }
