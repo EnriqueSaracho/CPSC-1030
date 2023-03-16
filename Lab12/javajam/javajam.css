@@ -170,3 +170,8 @@ img {
   float: left;
   width: 33%;
 }
+
+audio {
+  display: block;
+  margin-top: 1em;
+}
