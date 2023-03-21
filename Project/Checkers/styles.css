@@ -80,6 +80,7 @@ nav a:hover {
 }
 
 main {
+  width: 80%;
   display: flex;
   margin-bottom: 50px;
 }
@@ -156,4 +157,19 @@ footer {
   display: flex;
   justify-content: center;
   color: white;
+}
+
+/* Menu */
+.menu-div {
+  width: 100%;
+}
+
+.menu-div h3 {
+  background-color: #ff5500;
+  color: #ffffff;
+  width: 100%;
+  padding: 0.3em;
+  font-weight: 600;
+  text-align: center;
+  font-size: 1.3em;
 }
