@@ -24,10 +24,30 @@ function calculateTemp() {
 
 //////////////Solution 4//////////////////////
 function calculateValues(option) {
-  let num1, num2;
+  let num1, num2, result;
   num1 = +document.getElementById("number1").value;
   num2 = +document.getElementById("number2").value;
   switch (option) {
     case "add":
+      result = num1 + num2;
+      document.getElementById("answer").value = result;
+      break;
+    case "sub":
+      result = num1 - num2;
+      document.getElementById("answer").value = result;
+      break;
+    case "mult":
+      result = num1 * num2;
+      document.getElementById("answer").value = result;
+      break;
+    case "div":
+      result = num1 / num2;
+      document.getElementById("answer").value = result;
+      break;
+    case "clear":
+      document.getElementById("number1").value = "0";
+      document.getElementById("number2").value = "0";
+      document.getElementById("answer").value = "";
+      break;
   }
 }
