@@ -1,3 +1,14 @@
+/* Primary colors */
+/* #ffffff white*/
+/* #ff5500 orange*/
+/* #c44100 darker*/
+/* #ff9900 orange/yellow */
+/* background: linear-gradient(34deg, #ff5500 10%, #ff9900 100%); gradient background*/
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Inter", sans-serif;
   margin: 0;
@@ -6,16 +17,17 @@ body {
 
 #wrapper {
   margin: 0 auto;
-  max-width: 900px;
+  max-width: 90%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+/* header */
 header {
   margin-top: 75px;
   text-align: center;
-  width: 80%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -33,32 +45,34 @@ header {
   z-index: -1;
 }
 
-h1 {
+header h1 {
   color: #ff5500;
-  background-color: white;
+  background-color: #ffffff;
   width: 260px;
 }
+/* header */
 
+/* navbar */
 nav {
   height: 70px;
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100vw; /* 100vw*/
   display: flex;
   justify-content: space-around;
   align-items: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  background-color: white;
+  background-color: #ffffff;
   opacity: 0.9;
 }
 
-h2 {
+nav h2 {
   color: #ff5500;
   margin: 0;
 }
 
-ul {
+nav ul {
   list-style: none;
   display: flex;
   padding: 0;
@@ -74,36 +88,41 @@ nav a {
 }
 
 nav a:hover {
-  color: white;
   background-color: #ff5500;
+  color: #ffffff;
   transition: 0.3s;
 }
+/* navbar */
 
+/* home: main */
 main {
   width: 80%;
   display: flex;
+  justify-content: space-between;
   margin-bottom: 50px;
 }
 
-.container1 {
-  flex: 1;
+.singleContainer {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  height: 540px;
-  margin: 20px;
+  width: 49%;
+  height: 550px;
 }
 
-.container2 {
-  flex: 1;
+.doubleContainer {
+  width: 49%;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .subcontainer {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  height: 260px;
-  margin-top: 20px;
+  height: 49%;
   display: flex;
 }
 
-.container1 img {
+/* .container1 img {
   object-fit: cover;
   height: 50%;
   width: 100%;
@@ -112,48 +131,57 @@ main {
 .subcontainer img {
   width: 50%;
   object-fit: cover;
+} */
+
+.component {
+  padding: 1em;
 }
 
-.text-box {
-  padding: 0 15px;
-}
-
-.text-box h3 {
+.component h3 {
   font-size: 1.5em;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 .price {
+  font-size: 1.2em;
   font-weight: 700;
   color: #ff5500;
 }
 
-button {
+.component button {
   border: none;
   background-color: #ff5500;
   height: 40px;
   width: 100px;
   border-radius: 50px;
-  color: white;
-  font-size: 1em;
+  color: #ffffff;
+  font-size: 1.2em;
   font-weight: 700;
 }
 
-button:active {
-  background-color: #c44100;
-  transition: 0.2s;
-}
-
-button:hover {
+.component button:hover {
   cursor: pointer;
 }
+
+.component button:active {
+  color: #ff5500;
+  background-color: #ffffff;
+  border: 3px solid #ff5500;
+}
+
+#component1 {
+  background-image: url("./images/pizza1.jpg");
+  background-size: cover;
+}
+/* home: main */
 
 footer {
   height: 50px;
   width: 100vw;
   text-align: center;
   font-style: italic;
-  background-color: #ff5500;
+  /* background-color: #ff5500; */
+  background: linear-gradient(34deg, #ff5500 10%, #ff9900 100%);
   display: flex;
   justify-content: center;
   color: white;
