@@ -27,7 +27,7 @@ body {
 header {
   margin-top: 75px;
   text-align: center;
-  width: 100%;
+  width: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -64,7 +64,7 @@ nav {
   align-items: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   background-color: #ffffff;
-  opacity: 0.9;
+  opacity: 0.95;
 }
 
 nav h2 {
@@ -100,13 +100,14 @@ main {
   display: flex;
   justify-content: space-between;
   margin-bottom: 50px;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
 }
 
 .singleContainer {
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
   width: 49%;
   height: 550px;
+  margin-bottom: 20px;
 }
 
 .doubleContainer {
@@ -118,9 +119,10 @@ main {
 }
 
 .subcontainer {
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  height: 49%;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+  height: 48.5%;
   display: flex;
+  justify-content: center;
 }
 
 .component {
@@ -167,36 +169,51 @@ main {
 
 #homePic1 {
   height: 50%;
-  background-image: url("./images/pizza1.jpg");
+  background-image: url("./media/pizza1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 #homePic2 {
   width: 50%;
-  background-image: url("./images/pizza2.jpg");
+  background-image: url("./media/pizza2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-#homePic3 {
-  width: 50%;
-  background-image: url("./images/pizza3.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+.videoComponent {
+  display: flex;
+  align-items: center;
+}
+
+#homeVid1 {
+  width: 100%;
+  max-height: 100%;
+}
+
+.audioComponent {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.audioComponent h3 {
+  margin: 0;
 }
 /* home: main */
 
 footer {
   height: 50px;
-  width: 100vw;
+  width: 100%;
   text-align: center;
   font-style: italic;
-  /* background-color: #ff5500; */
   background: linear-gradient(34deg, #ff5500 10%, #ff9900 100%);
   display: flex;
   justify-content: center;
-  color: white;
+  color: #ffffff;
+  border-radius: 8px 8px 0 0;
 }
 
 /* Menu */
