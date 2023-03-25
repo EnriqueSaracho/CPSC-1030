@@ -100,6 +100,7 @@ main {
   display: flex;
   justify-content: space-between;
   margin-bottom: 50px;
+  /* flex-wrap: wrap; */
 }
 
 .singleContainer {
@@ -122,17 +123,6 @@ main {
   display: flex;
 }
 
-/* .container1 img {
-  object-fit: cover;
-  height: 50%;
-  width: 100%;
-}
-
-.subcontainer img {
-  width: 50%;
-  object-fit: cover;
-} */
-
 .component {
   padding: 1em;
 }
@@ -146,6 +136,12 @@ main {
   font-size: 1.2em;
   font-weight: 700;
   color: #ff5500;
+}
+
+.subcontainer .component {
+  width: 50%;
+  padding: 0.8em;
+  font-size: 0.9em;
 }
 
 .component button {
@@ -169,8 +165,24 @@ main {
   border: 3px solid #ff5500;
 }
 
-#component1 {
+#homePic1 {
+  height: 50%;
   background-image: url("./images/pizza1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#homePic2 {
+  width: 50%;
+  background-image: url("./images/pizza2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#homePic3 {
+  width: 50%;
+  background-image: url("./images/pizza3.jpg");
+  background-repeat: no-repeat;
   background-size: cover;
 }
 /* home: main */
