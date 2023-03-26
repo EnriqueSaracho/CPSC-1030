@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Checkers Home</title>
+    <title>Checkers Menu</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -22,16 +22,87 @@
       <nav>
         <h2>Checkers</h2>
         <ul>
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="#">Menu</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="./menu.html">Menu</a></li>
           <li><a href="">Order</a></li>
           <li><a href="">Account</a></li>
         </ul>
       </nav>
       <main>
-        <div class="menu-div">
-          <h3>Build your own</h3>
-          <div></div>
+        <div class="singleContainer">
+          <div id="homePic1"></div>
+          <div class="component">
+            <h3>Post 1</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+              nisi eveniet doloribus alias soluta vero.
+            </p>
+            <p class="price">$12.99</p>
+            <button type="button">Order</button>
+          </div>
+        </div>
+
+        <div class="doubleContainer">
+          <div class="subcontainer">
+            <div class="component">
+              <h3>Post 2</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Itaque, consequatur!
+              </p>
+              <p class="price">$17.99</p>
+              <button type="button">Order</button>
+            </div>
+            <div id="homePic2"></div>
+          </div>
+
+          <div class="subcontainer">
+            <div class="videoComponent">
+              <video controls id="homeVid1">
+                <source src="./media/pizza.mp4" type="video/mp4" />
+                <a href="./media/pizza.mp4">Download the video file</a>
+              </video>
+            </div>
+          </div>
+        </div>
+
+        <div class="doubleContainer">
+          <div class="subcontainer">
+            <div class="audioComponent">
+              <h3>Italian Story</h3>
+              <p>Relaxing Acoustic Nylon Guitar</p>
+              <audio controls>
+                <source src="./media/italian-story.mp3" type="audio/mp3" />
+                <a href="./media/italian-story.mp3">Download the audio file</a>
+              </audio>
+            </div>
+          </div>
+
+          <div class="subcontainer">
+            <div class="component">
+              <h3>Post 5</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Itaque, consequatur!
+              </p>
+              <p class="price">$17.99</p>
+              <button type="button">Order</button>
+            </div>
+            <div id="homePic2"></div>
+          </div>
+        </div>
+
+        <div class="singleContainer">
+          <div id="homePic1"></div>
+          <div class="component">
+            <h3>Post 6</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+              nisi eveniet doloribus alias soluta vero.
+            </p>
+            <p class="price">$12.99</p>
+            <button type="button">Order</button>
+          </div>
         </div>
       </main>
       <footer>

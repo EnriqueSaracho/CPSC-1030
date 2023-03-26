@@ -92,6 +92,9 @@ nav a:hover {
   color: #ffffff;
   transition: 0.3s;
 }
+
+@media only screen and (max-width: 768px) {
+}
 /* navbar */
 
 /* home: main */
@@ -116,6 +119,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 .subcontainer {
@@ -202,21 +206,23 @@ main {
 .audioComponent h3 {
   margin: 0;
 }
-/* home: main */
 
-footer {
-  height: 50px;
+.audioComponent audio {
   width: 100%;
-  text-align: center;
-  font-style: italic;
-  background: linear-gradient(34deg, #ff5500 10%, #ff9900 100%);
-  display: flex;
-  justify-content: center;
-  color: #ffffff;
-  border-radius: 8px 8px 0 0;
 }
 
-/* Menu */
+@media only screen and (max-width: 768px) {
+  .singleContainer {
+    width: 100%;
+  }
+
+  .doubleContainer {
+    width: 100%;
+  }
+}
+/* home: main */
+
+/* menu: main */
 .menu-div {
   width: 100%;
 }
@@ -230,3 +236,18 @@ footer {
   text-align: center;
   font-size: 1.3em;
 }
+/* menu: main */
+
+/* footer */
+footer {
+  height: 50px;
+  width: 100%;
+  text-align: center;
+  font-style: italic;
+  background: linear-gradient(34deg, #ff5500 10%, #ff9900 100%);
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+  border-radius: 8px 8px 0 0;
+}
+/* footer */
