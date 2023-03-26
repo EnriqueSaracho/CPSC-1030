@@ -50,6 +50,12 @@ header h1 {
   background-color: #ffffff;
   width: 260px;
 }
+
+@media only screen and (max-width: 768px) {
+  header {
+    width: 95%;
+  }
+}
 /* header */
 
 /* navbar */

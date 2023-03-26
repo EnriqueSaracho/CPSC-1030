@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Checkers Menu</title>
+    <title>Checkers Home</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -12,14 +12,24 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/9905fafc47.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./app.js" defer></script>
   </head>
+
   <body>
     <div id="wrapper">
+      <!-- header -->
       <header>
         <h1>Checkers Pizza</h1>
         <div id="line"></div>
       </header>
-      <nav>
+      <!-- header -->
+
+      <!-- primary navbar -->
+      <nav id="primaryNav">
         <h2>Checkers</h2>
         <ul>
           <li><a href="#">Home</a></li>
@@ -28,86 +38,30 @@
           <li><a href="">Account</a></li>
         </ul>
       </nav>
-      <main>
-        <div class="singleContainer">
-          <div id="homePic1"></div>
-          <div class="component">
-            <h3>Post 1</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-              nisi eveniet doloribus alias soluta vero.
-            </p>
-            <p class="price">$12.99</p>
-            <button type="button">Order</button>
-          </div>
-        </div>
+      <!-- primary navbar -->
 
-        <div class="doubleContainer">
-          <div class="subcontainer">
-            <div class="component">
-              <h3>Post 2</h3>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Itaque, consequatur!
-              </p>
-              <p class="price">$17.99</p>
-              <button type="button">Order</button>
-            </div>
-            <div id="homePic2"></div>
-          </div>
+      <!-- secondary navbar -->
+      <nav id="secondaryNav">
+        <h2>Checkers</h2>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="./menu.html">Menu</a></li>
+          <li><a href="">Order</a></li>
+          <li><a href="">Account</a></li>
+        </ul>
+        <i class="fas fa-bars" onclick="showNavbar()"></i>
+      </nav>
+      <!-- secondary navbar -->
 
-          <div class="subcontainer">
-            <div class="videoComponent">
-              <video controls id="homeVid1">
-                <source src="./media/pizza.mp4" type="video/mp4" />
-                <a href="./media/pizza.mp4">Download the video file</a>
-              </video>
-            </div>
-          </div>
-        </div>
+      <!-- main -->
+      <main></main>
+      <!-- main -->
 
-        <div class="doubleContainer">
-          <div class="subcontainer">
-            <div class="audioComponent">
-              <h3>Italian Story</h3>
-              <p>Relaxing Acoustic Nylon Guitar</p>
-              <audio controls>
-                <source src="./media/italian-story.mp3" type="audio/mp3" />
-                <a href="./media/italian-story.mp3">Download the audio file</a>
-              </audio>
-            </div>
-          </div>
-
-          <div class="subcontainer">
-            <div class="component">
-              <h3>Post 5</h3>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Itaque, consequatur!
-              </p>
-              <p class="price">$17.99</p>
-              <button type="button">Order</button>
-            </div>
-            <div id="homePic2"></div>
-          </div>
-        </div>
-
-        <div class="singleContainer">
-          <div id="homePic1"></div>
-          <div class="component">
-            <h3>Post 6</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-              nisi eveniet doloribus alias soluta vero.
-            </p>
-            <p class="price">$12.99</p>
-            <button type="button">Order</button>
-          </div>
-        </div>
-      </main>
+      <!-- footer -->
       <footer>
         <p>Checkers 2023</p>
       </footer>
+      <!-- footer -->
     </div>
   </body>
 </html>
