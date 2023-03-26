@@ -114,6 +114,10 @@ header h1 {
     left: 0;
     top: 0;
     background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: -91.5vh;
+    transition: top 0.5s ease;
   }
 
   #secondaryNav h2 {
@@ -153,10 +157,9 @@ header h1 {
   #secondaryNav i {
     font-size: 2em;
     padding: 0.5em;
-  }
-
-  #secondaryNav i {
     cursor: pointer;
+    width: 100%;
+    text-align: center;
   }
 }
 /* navbar */
@@ -278,6 +281,10 @@ main {
 }
 
 @media only screen and (max-width: 768px) {
+  main {
+    width: 95%;
+  }
+
   .singleContainer {
     width: 100%;
   }
