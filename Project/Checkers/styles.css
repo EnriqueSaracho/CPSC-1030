@@ -493,6 +493,9 @@ main {
 #cart-container {
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
   padding: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 table {
@@ -542,6 +545,50 @@ thead > tr:nth-child(odd) {
   display: inline-block;
   color: #c44100;
   font-size: 1em;
+}
+
+#btn-div {
+  padding: 1.5em;
+}
+
+#btn-div button {
+  border: none;
+  padding: 1em 2em;
+  margin: 0 0.3em;
+  background-color: #ff5500;
+  color: #ffffff;
+  font-size: 1em;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+#btn-div button:active {
+  background-color: #c44100;
+}
+
+@media only screen and (max-width: 768px) {
+  tr {
+    height: 4em;
+  }
+
+  th,
+  td {
+    padding: 0.5em 0.5em;
+  }
+
+  .table-icon {
+    padding: 0;
+  }
+
+  .table-icon:hover {
+    color: #000000;
+  }
+
+  #btn-div {
+    padding: 1.5em 0;
+  }
 }
 /* cart: main */
 
