@@ -614,6 +614,8 @@ thead > tr:nth-child(odd) {
   padding: 0.3em;
   text-align: center;
   border-radius: 5px 5px 0 0;
+  cursor: pointer;
+  transition: 0.2s;
 }
 
 #signup-btn {
@@ -624,6 +626,8 @@ thead > tr:nth-child(odd) {
   text-align: center;
   background-color: #cfcfcf;
   border-radius: 5px 5px 0 0;
+  cursor: pointer;
+  transition: 0.2s;
 }
 
 #login-form {
@@ -651,6 +655,7 @@ thead > tr:nth-child(odd) {
 
 #login-form button {
   padding: 0.5em 1em;
+  margin-top: 1em;
   background-color: #ff5500;
   color: #ffffff;
   font-size: 1.2em;
@@ -701,7 +706,7 @@ thead > tr:nth-child(odd) {
 
 #signup-form button {
   width: 130px;
-  margin: 0 0.2em;
+  margin: 1em 0.2em 0 0.2em;
   padding: 0.5em 1em;
   background-color: #ff5500;
   color: #ffffff;
