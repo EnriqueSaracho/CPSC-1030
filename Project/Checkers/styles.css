@@ -722,6 +722,29 @@ thead > tr:nth-child(odd) {
   background-color: #ffffff;
   color: #ff5500;
 }
+
+@media only screen and (max-width: 768px) {
+  #login-btn {
+    width: 49%;
+  }
+
+  #signup-btn {
+    width: 49%;
+  }
+
+  #login-form {
+    padding: 2em;
+  }
+
+  #signup-form {
+    padding: 2em;
+  }
+
+  #signup-form div {
+    display: flex;
+    flex-direction: column;
+  }
+}
 /* account: main */
 
 /* footer */
