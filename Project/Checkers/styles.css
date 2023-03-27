@@ -182,13 +182,13 @@ main {
 .singleContainer {
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
   width: 49%;
-  height: 550px;
+  height: 800px;
   margin-bottom: 20px;
 }
 
 .doubleContainer {
   width: 49%;
-  height: 550px;
+  height: 800px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -226,8 +226,7 @@ main {
 .component button {
   border: none;
   background-color: #ff5500;
-  height: 40px;
-  width: 100px;
+  padding: 0.5em 1em;
   border-radius: 50px;
   color: #ffffff;
   font-size: 1.2em;
@@ -253,7 +252,21 @@ main {
 
 #homePic2 {
   width: 50%;
-  background-image: url("./media/pizza2.jpg");
+  background-image: url("./media/tiramisu.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#homePic3 {
+  width: 50%;
+  background-image: url("./media/ingredients.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#homePic4 {
+  height: 50%;
+  background-image: url("./media/catering.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
