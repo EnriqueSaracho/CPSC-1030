@@ -233,6 +233,7 @@ main {
   color: #ffffff;
   font-size: 1.2em;
   font-weight: 700;
+  border: 2px solid #ff5500;
 }
 
 .component button:hover {
@@ -242,7 +243,6 @@ main {
 .component button:active {
   color: #ff5500;
   background-color: #ffffff;
-  border: 3px solid #ff5500;
 }
 
 #homePic1 {
@@ -553,19 +553,21 @@ thead > tr:nth-child(odd) {
 
 #btn-div button {
   border: none;
-  padding: 1em 2em;
+  padding: 0.5em 1em;
   margin: 0 0.3em;
   background-color: #ff5500;
   color: #ffffff;
-  font-size: 1em;
+  font-size: 1.2em;
   font-weight: 600;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.01em;
   border-radius: 50px;
   cursor: pointer;
+  border: 2px solid #ff5500;
 }
 
 #btn-div button:active {
-  background-color: #c44100;
+  background-color: #ffffff;
+  color: #ff5500;
 }
 
 @media only screen and (max-width: 768px) {
