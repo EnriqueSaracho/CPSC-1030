@@ -30,3 +30,7 @@ function switchForm(btn) {
     signupForm.style.display = "none";
   }
 }
+
+function addItem(item) {
+  alert(`Added 1 ${item} to the cart!`);
+}
