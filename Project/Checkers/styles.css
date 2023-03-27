@@ -71,6 +71,7 @@ header h1 {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   background-color: #ffffff;
   opacity: 0.95;
+  z-index: 1;
 }
 
 #primaryNav h2 {
@@ -124,6 +125,7 @@ header h1 {
     position: fixed;
     top: -91.5vh;
     transition: top 0.5s ease;
+    z-index: 1;
   }
 
   #secondaryNav h2 {
@@ -293,6 +295,12 @@ main {
   margin: 0;
 }
 
+@media only screen and (max-width: 1024px) {
+  main {
+    width: 90%;
+  }
+}
+
 @media only screen and (max-width: 900px) {
   .audioComponent audio {
     width: 100%;
@@ -315,9 +323,6 @@ main {
 /* home: main */
 
 /* menu: main */
-main {
-  width: 80%;
-}
 
 .menu-section {
   width: 100%;
@@ -466,10 +471,6 @@ main {
 }
 
 @media only screen and (max-width: 768px) {
-  main {
-    width: 95%;
-  }
-
   .menu-container {
     flex-direction: column;
     align-items: center;
