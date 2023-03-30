@@ -1,5 +1,5 @@
 const sportOptions = document.getElementsByName("sport");
-const sports = [];
+let sports = [];
 const sportsContainer = document.getElementById("sports-container");
 const colorOptions = document.getElementById("color");
 const colorText = document.getElementById("color-text");
@@ -18,6 +18,7 @@ function displaySports() {
     para.innerHTML = sports[i];
     sportsContainer.appendChild(para);
   }
+  sports = [];
 }
 
 function displayColor() {
