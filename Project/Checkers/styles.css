@@ -256,6 +256,7 @@ main {
 #homePic2 {
   width: 50%;
   background-image: url("./media/tiramisu.jpg");
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -419,9 +420,9 @@ main {
   background-image: url(./media/bruschetta.jpg);
 }
 
-#img-garlic-knots {
+/* #img-garlic-knots {
   background-image: url(./media/garlic-knots.jpg);
-}
+} */
 
 #img-mozzarella-sticks {
   background-image: url(./media/mozzarella-sticks.jpg);
@@ -465,10 +466,12 @@ main {
 
 #img-beer {
   background-image: url(./media/beer.jpg);
+  background-position: right;
 }
 
 #img-wine {
   background-image: url(./media/wines.jpg);
+  background-position: right;
 }
 
 @media only screen and (max-width: 768px) {
