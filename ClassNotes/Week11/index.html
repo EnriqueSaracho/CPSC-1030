@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>My first script</title>
+    <script src="myScript.js" defer></script>
+  </head>
+  <body>
+    <h1 id="heading" onclick="changeColor()">
+      This is my first javascript file.
+    </h1>
+    <script>
+      document.write("Hello World!!");
+    </script>
+    <h3>This demonstrates the use of write and writeln methods</h3>
+    <!-- <pre style="color: blue; font-size: 1.2em">        
+        <script>
+            // document.write("Hello World!");
+            document.writeln("I am learning javascript");
+            document.writeln("This is fun!");
+          </script>
+    </pre> -->
+    <p id="para1"></p>
+    <button onclick="changeColor()">Click me!!</button>
+    <h3>Adding two numbers</h3>
+    <form>
+      <label for="num1">Enter number 1</label>
+      <input type="text" id="num1" />
+      <label for="num2">Enter number 2</label>
+      <input type="text" id="num2" />
+      <label for="sum">Sum: </label>
+      <input type="text" id="sum" disabled />
+      <button type="button" onclick="calculateSum()">Sum</button>
+    </form>
+  </body>
+</html>

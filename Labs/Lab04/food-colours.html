@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Food Colours</title>
+    <style>
+      table,
+      th,
+      td {
+        border: solid 1px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <header>
+        <h1>HTML5 Tables</h1>
+      </header>
+      <nav>
+        <a href="./index.html">Lab 4</a>
+      </nav>
+      <main>
+        <table>
+          <caption>
+            <h2>Fruits & Vegetables</h2>
+          </caption>
+          <tr>
+            <th id="veggie" colspan="2">Veggie</th>
+            <th id="fruit" colspan="2">Fruit</th>
+            <th></th>
+          </tr>
+          <tr>
+            <td headers="veggie yellow" colspan="2">Yellow Pepper</td>
+            <td headers="fruit yellow" rowspan="2">Banana</td>
+            <td headers="fruit yellow" rowspan="2">Orange</td>
+            <th id="yellow" rowspan="3">Yellow</th>
+          </tr>
+          <tr>
+            <td headers="veggie yellow" colspan="2">Yellow Zucchini</td>
+          </tr>
+          <tr>
+            <td headers="veggie yellow">Pumpkin</td>
+            <td headers="veggie yellow">Corn</td>
+            <td headers="fruit yellow" colspan="2">Pineapple</td>
+          </tr>
+          <tr>
+            <td headers="veggie red" colspan="2">Red Pepper</td>
+            <td headers="fruit red" rowspan="2">Strawberry</td>
+            <td headers="fruit red" rowspan="2">Watermelon</td>
+            <th id="red" rowspan="3">Red</th>
+          </tr>
+          <tr>
+            <td headers="veggie red">Beet</td>
+            <td headers="veggie red">Tomato</td>
+          </tr>
+          <tr>
+            <td headers="veggie red" colspan="2">Radishes</td>
+            <td headers="fruit red" colspan="2">Cherries</td>
+          </tr>
+        </table>
+      </main>
+    </div>
+  </body>
+</html>

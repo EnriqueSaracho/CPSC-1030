@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Web Form</title>
+</head>
+
+<body>
+  <h1>Contact Us:</h1>
+  <form action="">
+    <label for="name">Name:</label>
+    <input type="text" name="name" id="name"><br>
+    <label for="email">Email:</label>
+    <input type="email" name="email" id="email"><br>
+    <label for="url">Web Address:</label>
+    <input type="url" name="url" id="url"><br>
+    <label for="tel">Telephone Number:</label>
+    <input type="tel" name="tel" id="tel"><br>
+
+    <label for="keyword">Enter the search keyword:</label>
+    <input type="search" name="keyword" id="keyword"><br>
+
+    <!-- DataList -->
+    <label for="color">Favorite Color:</label>
+    <input type="search" name="mycolor" id="color" list="colors">
+    <datalist id="colors" name="colors">
+      <option value="red" label="Red">
+      <option value="green" label="Green">
+      <option value="blue" label="Blue">
+      <option value="yellow" label="Yellow">
+      <option value="pink" label="Pink">
+      <option value="black" label="Black">
+    </datalist>
+    <br>
+    <label for="date">Choose a date:</label>
+    <input type="datetime-local" name="date" id="date"><br>
+    <!-- type = date, time, month, week, datetime-local -->
+
+    <label for="color">Choose a color:</label>
+    <input type="color" name="color" id="color"><br>
+
+    <label for="number">Choose a number:</label>
+    <input type="number" name="number" id="number" min="1" max="10"><br>
+
+    <label for="rating">Rating (1-10)</label>
+    <!-- default step is 1 -->
+    <input type="range" name="rating" id="rating" min="1" max="10" step="2"><br>
+
+    <input type="submit" value="Sign Up">
+    <input type="reset">
+
+
+  </form>
+
+</body>
+
+</html>

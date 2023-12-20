@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Web Forms</title>
+  </head>
+  <body>
+    <h1>Mailist List</h1>
+    <form action="" method="get" enctype="multipart/form-data">
+      <label for="username">Enter user name: </label>
+      <input
+        type="text"
+        name="username"
+        id="username"
+        value="John"
+        size="40"
+        disabled
+      />
+      <br /><br />
+      <label
+        >Enter email*:
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="john@gmail.com"
+          required
+      /></label>
+      <br /><br />
+      <label for="password"
+        >Password: <input type="password" name="password" id="password"
+      /></label>
+      <br /><br />
+      <input
+        type="hidden"
+        name="sendto"
+        id="sendto"
+        value="example@email.com"
+      />
+      <label for="comments">Comments: </label>
+      <textarea
+        name="comments"
+        id="comments"
+        cols="20"
+        rows="5"
+        style="resize: none"
+      ></textarea>
+      <br />
+      <br />
+
+      <!-- Checkboxes -->
+      <h3>Choose the pizza topping</h3>
+      <label for="greenpep">Green Pepper: </label>
+      <input type="checkbox" id="greenpep" name="topping" value="greenpep" />
+      <br />
+
+      <!-- Radio Buttons -->
+      <label for="thin">Thin crust: </label>
+      <input type="radio" id="thin" name="crust" value="thin" checked />
+      <br />
+      <label for="thick">Thick crust: </label>
+      <input type="radio" id="thick" name="crust" value="thick" />
+      <br />
+
+      <h3>Choosing the color</h3>
+      <label for="colors">Pick a color: </label>
+      <select name="color" id="colors" size="5" multiple>
+        <option value="red">Red</option>
+        <option value="green">Green</option>
+        <option value="purple">Purple</option>
+        <option value="blue">Blue</option>
+      </select>
+
+      <br />
+      <br />
+      <input type="submit" value="Sign Up" />
+
+      <!-- <button type="reset">
+        <p>Click here to submit the form</p>
+        <p>This will to the server</p>
+      </button> -->
+      <!-- <input
+        type="image"
+        src="./signup.gif"
+        width="90"
+        height="70"
+        alt="Submit Button"
+      /> -->
+      <!-- Always works as submit-->
+      <input type="reset" />
+    </form>
+  </body>
+</html>
